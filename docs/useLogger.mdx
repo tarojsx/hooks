@@ -1,0 +1,25 @@
+# `useLogger`
+
+打印组件生命周期.
+
+## 用法
+
+```jsx
+import { useLogger } from '@tarojsx/hooks'
+
+const Demo = ({ id }) => {
+    useLogger(console.log, 'demo page')
+}
+```
+
+```
+mounted demo page
+updated demo page
+unmounted demo page
+```
+
+## 参考
+
+```ts
+useLogger(logger, ...rest)
+```

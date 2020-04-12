@@ -99,6 +99,9 @@ module.exports = {
   - [useNavigationBar](./docs/useNavigationBar.mdx) &mdash; 动态更新导航栏属性.
   - [usePullDownRefresh](./docs/usePullDownRefresh.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
 
+- **生命周期**
+  - [useLogger](./docs/useLogger.mdx) &mdash; 打印组件生命周期.
+
 ## 支持
 
 欢迎各种形式的支持. 至少可以给颗星 :star:
