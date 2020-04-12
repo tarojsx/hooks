@@ -57,8 +57,6 @@
 
 ## 用法
 
-# Usage
-
 Hooks API 需要 React [`16.8.0`](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html) 及以上版本.
 
 可以单独导入:
@@ -97,7 +95,7 @@ module.exports = {
 - **环境**
   - [useRouterParams](./docs/useRouterParams.mdx) &mdash; 获取页面路由参数.
   
-- **UI**
+- **界面**
   - [useNavigationBar](./docs/useNavigationBar.mdx) &mdash; 动态更新导航栏属性.
   - [usePullDownRefresh](./docs/usePullDownRefresh.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
 
