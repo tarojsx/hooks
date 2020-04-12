@@ -1,0 +1,62 @@
+{
+    "name": "@tarojsx/hooks",
+    "version": "0.1.0",
+    "description": "Taro3 hooks",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "colder",
+    "license": "MIT",
+    "keywords": [
+        "taro",
+        "taro3",
+        "hooks",
+        "react",
+        "reactjs",
+        "wx",
+        "weixin",
+        "wechat",
+        "weapp",
+        "wechat-mini-program",
+        "javascript",
+        "typescript"
+    ],
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarojsx/hooks.git"
+    },
+    "homepage": "https://github.com/tarojsx/hooks",
+    "bugs": {
+        "url": "https://github.com/tarojsx/hooks/issues"
+    },
+    "scripts": {
+        "start": "tsc -w --preserveWatchOutput",
+        "prebuild": "rimraf dist tsconfig.tsbuildinfo",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "release": "np"
+    },
+    "devDependencies": {
+        "@tarojs/taro": "3.0.0-beta.3",
+        "@types/react": "^16.9.34",
+        "np": "^6.2.0",
+        "rimraf": "^3.0.2",
+        "tslib": "^1.11.1",
+        "typescript": "^3.8.3"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    },
+    "np": {},
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "printWidth": 120
+    }
+}

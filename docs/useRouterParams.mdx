@@ -1,0 +1,25 @@
+# `useRouterParams`
+
+获取页面路由参数.
+
+## 用法
+
+```jsx
+import { useRouterParams } from '@tarojsx/hooks'
+
+const Demo = () => {
+    const params = useRouterParams()
+
+    const str = useRouterParams('str')
+
+    const num = useRouterParams('num', Number)
+}
+```
+
+## 参考
+
+```ts
+useRouterParams()
+useRouterParams('key')
+useRouterParams('key', fn)
+```

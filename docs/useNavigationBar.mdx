@@ -1,0 +1,34 @@
+# `useNavigationBar`
+
+动态更新导航栏属性.
+
+## 用法
+
+```jsx
+import { useNavigationBar } from '@tarojsx/hooks'
+
+const Demo = ({ id }) => {
+    useNavigationBar(
+        !id
+            ? {
+                  title: '新建',
+                  backgroundColor: 'green',
+              }
+            : {
+                  title: '编辑',
+                  backgroundColor: 'orange',
+              }
+    )
+}
+```
+
+## 参考
+
+```ts
+useNavigationBar({
+    title,
+    frontColor,
+    backgroundColor,
+    animation,
+})
+```
