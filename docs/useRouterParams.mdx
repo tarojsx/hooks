@@ -10,9 +10,12 @@ import { useRouterParams } from '@tarojsx/hooks'
 const Demo = () => {
     const params = useRouterParams()
 
-    const str = useRouterParams('str')
+    // pages/demo?title=abc
+    const title = useRouterParams('title')
 
-    const num = useRouterParams('num', Number)
+    // pages/demo?pageIndex=2
+    const pageNumber = useRouterParams('pageIndex', Number) + 1
+    // pageNumber === 3
 }
 ```
 
