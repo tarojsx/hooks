@@ -17,6 +17,8 @@ export function useRouterParams(key?: string, transformer?: Function) {
 
     if (typeof transformer === 'function') {
         return transformer(value)
+    } else if (typeof value === 'string') {
+        return decodeURIComponent(value)
     }
 
     return value
