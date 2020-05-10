@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useDidShow, useDidHide, setNavigationBarTitle, setNavigationBarColor } from '@tarojs/taro'
 
-interface NavigationBarOptions extends Partial<setNavigationBarTitle.Param>, Partial<setNavigationBarColor.Param> {}
+interface NavigationBarOptions extends Partial<setNavigationBarTitle.Option>, Partial<setNavigationBarColor.Option> {}
 
 /**
  * 更新页面导航栏属性
@@ -25,6 +25,6 @@ export function useNavigationBar(options: NavigationBarOptions) {
 
         const { title, ...color } = options
         if (title) setNavigationBarTitle({ title })
-        if (Object.keys(color)?.length) setNavigationBarColor(color as setNavigationBarColor.Param)
+        if (Object.keys(color)?.length) setNavigationBarColor(color as setNavigationBarColor.Option)
     }, [show, options])
 }
