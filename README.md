@@ -100,6 +100,7 @@ module.exports = {
   - [usePullDownRefresh](./docs/usePullDownRefresh.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
 
 - **生命周期**
+  - [useDidShowAgain](./docs/useDidShowAgain.mdx) &mdash; 页面**再次**展示时的回调.
   - [useLogger](./docs/useLogger.mdx) &mdash; 打印组件生命周期.
 
 ## 支持
