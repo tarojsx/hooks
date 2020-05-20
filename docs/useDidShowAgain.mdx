@@ -1,0 +1,33 @@
+# `useDidShowAgain`
+
+页面**再次**展示时的回调
+
+## 用法
+
+```jsx
+import { useDidShow } from '@tarojs/taro'
+import { useDidShowAgain } from '@tarojsx/hooks'
+
+const Demo = () => {
+    useDidShow(() => {
+        console.log('show')
+    })
+
+    useDidShowAgain(() => {
+        console.log('show again')
+    })
+}
+
+// 首次打开页面
+// show
+
+// 进入其他页面后返回
+// show
+// show again
+```
+
+## 参考
+
+```ts
+useDidShowAgain(fn)
+```
