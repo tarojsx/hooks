@@ -1,6 +1,6 @@
 {
     "name": "@tarojsx/hooks",
-    "version": "0.10.0",
+    "version": "0.10.1",
     "description": "Taro3 hooks",
     "source": "src/index.ts",
     "main": "dist/index.js",
