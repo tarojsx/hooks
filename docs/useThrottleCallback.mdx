@@ -1,0 +1,27 @@
+# `useThrottleCallback`
+
+函数防抖.
+
+## 用法
+
+```jsx
+import { useThrottleCallback } from '@tarojsx/hooks'
+
+const Demo = ({ id }) => {
+    const handleClick = useThrottleCallback((e) => console.log('500ms 一次'), true)
+    const handleClick2 = useThrottleCallback((e) => console.log('222ms 一次'), 222)
+
+    return (
+        <View>
+            <Button onClick={handleClick}>500ms 一次</Button>
+            <Button onClick={handleClick}>222ms 一次</Button>
+        </View>
+    )
+}
+```
+
+## 参考
+
+```ts
+useThrottleCallback(fn, delay)
+```

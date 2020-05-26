@@ -92,6 +92,9 @@ module.exports = {
 
 ## 参考
 
+- **基础**
+  - [useThrottleCallback](./docs/useThrottleCallback.mdx) &mdash; 函数防抖.
+
 - **环境**
   - [useRouterParams](./docs/useRouterParams.mdx) &mdash; 获取页面路由参数.
   
