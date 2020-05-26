@@ -1,7 +1,7 @@
 import { useRef, useCallback } from 'react'
 
 /**
- * 函数防抖
+ * 函数节流
  *
  * 首次一定调用, 之后在 delay 时间后才会调用. 如果不指定 delay, 相当于直接调用.
  *
