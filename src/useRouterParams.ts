@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { useRouter, RouterInfo } from '@tarojs/taro'
 
 /**
@@ -7,19 +8,27 @@ export function useRouterParams(): RouterInfo['params']
 export function useRouterParams(key: string): string
 export function useRouterParams<T>(key: string, transformer: (value: string) => T): T
 export function useRouterParams(key?: string, transformer?: Function) {
-    const { params } = useRouter()
+    const routerParams = useRouter()?.params || {}
 
-    if (!key) {
-        return params
-    }
+    // 路由参数不会动态改变, Taro 3.0.0-alpha.7 以下版本页面再次显示时会丢失参数.
+    return useMemo(() => {
+        const params = { ...routerParams }
+        for (const field of Object.keys(params)) {
+            if (typeof params[field] === 'string') {
+                params[field] = decodeURIComponent(params[field])
+            }
+        }
 
-    const value = params[key]
+        if (!key) {
+            return params
+        }
 
-    if (typeof transformer === 'function') {
-        return transformer(value)
-    } else if (typeof value === 'string') {
-        return decodeURIComponent(value)
-    }
+        const value = params[key]
 
-    return value
+        if (typeof transformer === 'function') {
+            return transformer(value)
+        }
+
+        return value
+    }, [])
 }
