@@ -49,36 +49,36 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tarojs/api@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-rc.0.tgz#41e1a6b9127ccf47c88aa39bd4fc1aa8a6253600"
-  integrity sha1-QeGmuRJ8z0fIiqOb1PwaqKYlNgA=
+"@tarojs/api@3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-rc.3.tgz#279b5b041ca9640e9cffb96d5b1528d5f60690c9"
+  integrity sha1-J5tbBBypZA6c/7ltWxUo1fYGkMk=
   dependencies:
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/runtime" "3.0.0-rc.3"
 
-"@tarojs/router@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-rc.0.tgz#cd22b6fe89ef7974e5770d8e5e1dd4282598beb9"
-  integrity sha1-zSK2/onveXTldw2OXh3UKCWYvrk=
+"@tarojs/router@3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-rc.3.tgz?cache=0&sync_timestamp=1591260762748&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Frouter%2Fdownload%2F%40tarojs%2Frouter-3.0.0-rc.3.tgz#62544c00f725fec83d178324ef4b3f96fadeb04a"
+  integrity sha1-YlRMAPcl/sg9F4Mk70s/lvresEo=
   dependencies:
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/runtime" "3.0.0-rc.3"
     history "^4.10.1"
     universal-router "^8.3.0"
     url-parse "^1.4.7"
 
-"@tarojs/runtime@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-rc.0.tgz#d214da0b792d7b6c54bef2b573a43106fe2edfac"
-  integrity sha1-0hTaC3kte2xUvvK1c6QxBv4u36w=
+"@tarojs/runtime@3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-rc.3.tgz#41f56da1e40ab52f4b36ca01feeed2dc857fdd3e"
+  integrity sha1-QfVtoeQKtS9LNsoB/u7S3IV/3T4=
 
-"@tarojs/taro-h5@3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-rc.0.tgz#5de04db1e64287029a2af443bfe44f936df15fae"
-  integrity sha1-XeBNseZChwKaKvRDv+RPk23xX64=
+"@tarojs/taro-h5@3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-rc.3.tgz?cache=0&sync_timestamp=1591260750022&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro-h5%2Fdownload%2F%40tarojs%2Ftaro-h5-3.0.0-rc.3.tgz#28259cc4d52d6ccdeabf6fda437a7ab898a8b747"
+  integrity sha1-KCWcxNUtbM3qv2/aQ3p6uJiot0c=
   dependencies:
-    "@tarojs/api" "3.0.0-rc.0"
-    "@tarojs/router" "3.0.0-rc.0"
-    "@tarojs/runtime" "3.0.0-rc.0"
+    "@tarojs/api" "3.0.0-rc.3"
+    "@tarojs/router" "3.0.0-rc.3"
+    "@tarojs/runtime" "3.0.0-rc.3"
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
     mobile-detect "^1.4.2"
@@ -86,13 +86,13 @@
     unfetch "^4.1.0"
     whatwg-fetch "^2.0.4"
 
-"@tarojs/taro@^3.0.0-rc.0":
-  version "3.0.0-rc.0"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-rc.0.tgz#5ec9053c52c1d2be75d77fd9b6f92c043ac34531"
-  integrity sha1-XskFPFLB0r5113/ZtvksBDrDRTE=
+"@tarojs/taro@^3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-rc.3.tgz?cache=0&sync_timestamp=1591260686701&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Ftaro%2Fdownload%2F%40tarojs%2Ftaro-3.0.0-rc.3.tgz#f5690bcd865f0383962bcdd292410cf8abe7872e"
+  integrity sha1-9WkLzYZfA4OWK83SkkEM+Kvnhy4=
   dependencies:
-    "@tarojs/api" "3.0.0-rc.0"
-    "@tarojs/taro-h5" "3.0.0-rc.0"
+    "@tarojs/api" "3.0.0-rc.3"
+    "@tarojs/taro-h5" "3.0.0-rc.3"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -1404,10 +1404,10 @@ normalize-url@^4.1.0:
   resolved "https://registry.npm.taobao.org/normalize-url/download/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha1-RTNUCH5sqWlXvY9br3U/WYIUISk=
 
-np@^6.2.3:
-  version "6.2.3"
-  resolved "https://registry.npm.taobao.org/np/download/np-6.2.3.tgz#6161314e94f5ca38ae939d68f2c14fe95f43aa68"
-  integrity sha1-YWExTpT1yjiuk51o8sFP6V9Dqmg=
+np@^6.2.4:
+  version "6.2.4"
+  resolved "https://registry.npm.taobao.org/np/download/np-6.2.4.tgz#1cab1188b9764ae7794ec740a6881c52910337d9"
+  integrity sha1-HKsRiLl2Sud5TsdApogcUpEDN9k=
   dependencies:
     "@samverschueren/stream-to-observable" "^0.3.0"
     any-observable "^0.5.0"
@@ -1725,10 +1725,10 @@ react-universal-interface@^0.6.0:
   dependencies:
     tslib "^1.9.3"
 
-react-use@^15.1.0:
-  version "15.1.0"
-  resolved "https://registry.npm.taobao.org/react-use/download/react-use-15.1.0.tgz#e8680b3615841e81ec1070ca7374fa0da0539104"
-  integrity sha1-6GgLNhWEHoHsEHDKc3T6DaBTkQQ=
+react-use@^15.2.0:
+  version "15.2.0"
+  resolved "https://registry.npm.taobao.org/react-use/download/react-use-15.2.0.tgz#dfadfa432d6c51c2ade42e4585b725597d09bb86"
+  integrity sha1-3636Qy1sUcKt5C5FhbclWX0Ju4Y=
   dependencies:
     "@types/js-cookie" "2.2.6"
     "@xobotyi/scrollbar-width" "1.9.5"
@@ -2241,10 +2241,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^3.9.3:
-  version "3.9.3"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.3.tgz?cache=0&sync_timestamp=1589958854894&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
-  integrity sha1-06yIg6l8JhOeQt9ek+7s4z1hC4o=
+typescript@^3.9.5:
+  version "3.9.5"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.5.tgz?cache=0&sync_timestamp=1591598968110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  integrity sha1-WG8NujAM3ovlLdGsT34QCcGxPzY=
 
 unfetch@^4.1.0:
   version "4.1.0"
