@@ -1,4 +1,6 @@
-# `usePullDownRefresh`
+---
+title: usePullDownRefreshing
+---
 
 监听用户下拉刷新事件, 回调完成后自动收起.
 
@@ -7,10 +9,10 @@
 ## 用法
 
 ```jsx
-import { usePullDownRefresh } from '@tarojsx/hooks'
+import { usePullDownRefreshing } from '@tarojsx/hooks'
 
 const Demo = ({ id }) => {
-    usePullDownRefresh(async () => {
+    usePullDownRefreshing(async () => {
         await refresh()
     })
 }
@@ -19,5 +21,5 @@ const Demo = ({ id }) => {
 ## 参考
 
 ```ts
-usePullDownRefresh(fn, delay?: number)
+usePullDownRefreshing(fn, delay?: number)
 ```

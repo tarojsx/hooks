@@ -92,7 +92,10 @@ module.exports = {
 
 ## 参考
 
-- **基础**
+- [**Taro3 Hooks 替代**](./docs/taroHooks.mdx) &mdash; 解决 Taro3 原生 Hooks 依赖更新问题.
+
+
+- **基础** 
   - [useThrottleCallback](./docs/useThrottleCallback.mdx) &mdash; 函数节流.
 
 - **环境**
@@ -100,10 +103,10 @@ module.exports = {
   
 - **界面**
   - [useNavigationBar](./docs/useNavigationBar.mdx) &mdash; 动态更新导航栏属性.
-  - [usePullDownRefresh](./docs/usePullDownRefresh.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
+  - [usePullDownRefreshing](./docs/usePullDownRefreshing.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
 
 - **生命周期**
-  - [useDidShowAgain](./docs/useDidShowAgain.mdx) &mdash; 页面**再次**展示时的回调.
+  - [useDidShowAgain](./docs/useDidShowAgain.mdx) &mdash; 页面**再次**显示时的回调.
   - [useLogger](./docs/useLogger.mdx) &mdash; 打印组件生命周期.
 
 ## 支持
