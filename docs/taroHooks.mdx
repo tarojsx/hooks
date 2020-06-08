@@ -1,5 +1,5 @@
 ---
-title: taroHooks
+title: Taro.useXXX
 ---
 
 对 Taro 专有 Hooks 进行包装
@@ -8,8 +8,9 @@ taro 3.0 rc 版本专有 hooks 存在依赖更新问题, 一旦依赖更新, 新
 
 ## 用法
 
-```jsx
+```jsx title="正确示例"
 import { useState } from 'react'
+import { View } from '@tarojs/components'
 import { useReachBottom } from '@tarojsx/hooks'
 
 const Demo = () => {
@@ -19,6 +20,8 @@ const Demo = () => {
         console.log(page)
         setPage((prev) => prev + 1)
     })
+
+    return <View style={{ height: '111vh' }} />
 }
 
 // 0
@@ -26,7 +29,11 @@ const Demo = () => {
 // 2
 ```
 
-```jsx {4} title="不更新错误示范.jsx"
+```jsx {8} title="不更新错误示范"
+import { useState } from 'react'
+import Taro from '@tarojs/taro'
+import { View } from '@tarojs/components'
+
 const IssueDemo = () => {
     const [page, setPage] = useState(0)
 
@@ -34,6 +41,8 @@ const IssueDemo = () => {
         console.log(page)
         setPage((prev) => prev + 1)
     })
+
+    return <View style={{ height: '111vh' }} />
 }
 
 // 0
@@ -41,7 +50,11 @@ const IssueDemo = () => {
 // 0
 ```
 
-```jsx {4} title="重复调用错误示范.jsx"
+```jsx {8} title="重复调用错误示范"
+import { useState } from 'react'
+import Taro from '@tarojs/taro'
+import { View } from '@tarojs/components'
+
 const IssueDemo2 = () => {
     const [page, setPage] = useState(0)
 
@@ -49,6 +62,8 @@ const IssueDemo2 = () => {
         console.log(page)
         setPage((prev) => prev + 1)
     }, [page])
+
+    return <View style={{ height: '111vh' }} />
 }
 
 // 0
