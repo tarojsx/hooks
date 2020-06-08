@@ -1,17 +1,21 @@
 import { useRef } from 'react'
-import { useDidShow } from '@tarojs/taro'
+
+import { useDidShow } from './taroHooks'
 
 /**
- * 页面**再次**展示时的回调
+ * 页面**再次**显示时的回调
+ *
+ * @return 页面显示次数
  */
 export function useDidShowAgain(callback: () => any) {
-    const isFirst = useRef(true)
+    const counterRef = useRef(0)
 
-    return useDidShow(() => {
-        if (isFirst.current) {
-            isFirst.current = false
-        } else {
+    useDidShow(() => {
+        counterRef.current++
+        if (counterRef.current > 1) {
             callback()
         }
     })
+
+    return counterRef.current
 }
