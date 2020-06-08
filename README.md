@@ -103,6 +103,7 @@ module.exports = {
   
 - **界面**
   - [useNavigationBar](./docs/useNavigationBar.mdx) &mdash; 动态更新导航栏属性.
+  - [useNavigationBarTitle](./docs/useNavigationBarTitle.mdx) &mdash; 动态更新导航栏标题.
   - [usePullDownRefreshing](./docs/usePullDownRefreshing.mdx) &mdash; 监听用户下拉刷新事件, 回调完成后自动收起.
 
 - **生命周期**
