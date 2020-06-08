@@ -92,10 +92,8 @@ module.exports = {
 
 ## 参考
 
-- [**Taro3 Hooks 替代**](./docs/taroHooks.mdx) &mdash; 解决 Taro3 原生 Hooks 依赖更新问题.
-
-
 - **基础** 
+  - [Taro.useXXX](./docs/taroHooks.mdx) &mdash; 解决 Taro3 原生 Hooks 依赖更新问题.
   - [useThrottleCallback](./docs/useThrottleCallback.mdx) &mdash; 函数节流.
 
 - **环境**
