@@ -2,30 +2,34 @@
 title: useDidShowAgain
 ---
 
-页面**再次**展示时的回调
+页面**再次**显示时的回调
 
 ## 用法
 
 ```jsx
-import { useDidShow } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
 import { useDidShowAgain } from '@tarojsx/hooks'
 
 const Demo = () => {
-    useDidShow(() => {
+    Taro.useDidShow(() => {
         console.log('show')
     })
 
-    useDidShowAgain(() => {
+    // count 为页面显示计数, 从 1 开始.
+    const count = useDidShowAgain(() => {
         console.log('show again')
     })
+    console.log(count)
 }
 
-// 首次打开页面
+/* 首次打开页面 */
 // show
+// 1
 
-// 进入其他页面后返回
+/* 进入其他页面后返回 */
 // show
 // show again
+// 2
 ```
 
 ## 参考

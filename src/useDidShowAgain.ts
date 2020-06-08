@@ -5,7 +5,7 @@ import { useDidShow } from './taroHooks'
 /**
  * 页面**再次**显示时的回调
  *
- * @return 页面显示次数
+ * @return 页面显示次数, 从 1 开始.
  */
 export function useDidShowAgain(callback: () => any) {
     const counterRef = useRef(0)
