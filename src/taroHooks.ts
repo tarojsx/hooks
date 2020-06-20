@@ -2,9 +2,11 @@ import { useRef } from 'react'
 import Taro from '@tarojs/taro'
 
 /**
+ * @deprecated Use taro hooks instead
+ *
  * 对 Taro 专有 Hooks 进行包装, 在 hook 之外采用 ref 实现改变 callback 但不更新 hook 依赖的效果.
  *
- * 当前版本 taro 3.0.0-rc.3 仍然没有解决专有 hooks 依赖更新的问题, 一旦依赖更新, 新的 callback 会被 push 到回调函数数组中, 下次调用时新旧回调一起调用, 这有违直觉.
+ * taro 3.0.0-rc.4 以下版本专有 hooks 存在依赖更新问题, 一旦依赖更新, 新的 callback 会被 push 到回调函数数组中, 下次调用时新旧回调一起调用, 这有违直觉.
  *
  * @param hook Taro 专有 hook.
  */
